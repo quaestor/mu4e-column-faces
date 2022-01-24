@@ -110,7 +110,8 @@
 Value must be a function that takes two arguments:
 - the column
 - the mu4e message object"
-  :group 'mu4e-column-faces)
+  :group 'mu4e-column-faces
+  :type 'function)
 
 (defcustom mu4e-column-faces-adjust-face nil
   "Function to optionally further adjust mu4e's column faces.
@@ -121,7 +122,8 @@ Value must be a function that takes 2 arguments:
 - the column
 - the column's value
 - the mu4e message object"
-  :group 'mu4e-column-faces)
+  :group 'mu4e-column-faces
+  :type 'face)
 
 (defun mu4e-column-faces-~headers-append-handler (msglst)
   "Entry point for the mu4e overrides.
